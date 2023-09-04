@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(store.jpg);
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background:#009688 ;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%
+    postion: absolute;
+    top : 50%;
+    tranform:translateY(-50%);
+    text-align:center;
+    color:#fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    padding: 15px 0 ;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor:pointer;
+    overflow: hidden;
+    position: relative;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.5s;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+.about
+{
+    padding-left: 80px;
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(about.jpg);
+    text-align:left;
+    color:#fff;
+}
+.about h1{
+    font-size: 80px;
+    padding-top: 50px;
+}
+.about ul li{
+    margin: 20px auto;
+    font-size: 25px;
+    line-height: 35px;   
+}
+.Services{
+    margin-top: -17px;
+    padding-left: 30px;
+    text-align: center;
+    background-color:black;
+}
+.Services h2 {
+    padding-top: 25px;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    justify-items: center;
+    padding-left:250px;
+    margin-top: 50px;
+}
+.card img{
+    width:  300px;
+    height: 300px;
+    background-size: cover;
+    display: inline-block;
+    justify-items: center;
+    padding-left: 80px;
+}
+.card h4{
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10px;
+    color: #fff;
+}
+.container a{
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    border-radius: 5px;
+    border-color: rgb(113, 8, 8);
+}
+.container a:hover{
+    color: rgb(206, 206, 146);
+}
+.contact h2{
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 50px;
+
+}
+.contact{
+    text-align: center;
+    justify-items: center;
+    line-height: 35px;;
+}
+.contact input{
+    padding: 20px;
+    width: 50%;
+    height: 500%;
+    border: 5px;
+    border-color:  black solid;
+    background-color: #fff;
+    color: #131212;
+}
+
+.contact button{
+    border: black;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
